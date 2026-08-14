@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 const root = __dirname;
-const mime = { '.html':'text/html', '.js':'text/javascript', '.json':'application/json', '.glb':'model/gltf-binary', '.ktx2':'image/ktx2', '.jpg':'image/jpeg', '.svg':'image/svg+xml' };
+const mime = { '.html':'text/html', '.js':'text/javascript', '.json':'application/json', '.glb':'model/gltf-binary', '.wasm':'application/wasm', '.ktx2':'image/ktx2', '.jpg':'image/jpeg', '.svg':'image/svg+xml' };
 http.createServer((req, res) => {
   const pathname = decodeURIComponent(new URL(req.url, 'http://localhost').pathname);
   const target = path.join(root, pathname === '/' ? 'index.html' : pathname);

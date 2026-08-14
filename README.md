@@ -25,6 +25,9 @@ are all served locally.
 - real unit prices, statuses, sizes, floors, towers, balconies, types and views
 - availability, tower, unit type, room, floor, size, price and view filters
 - synchronized model highlighting, result list and unit detail card
+- query-driven unit details page with production interior model and labeled floor plan
+- exact per-unit production model and texture registry for every live unit page
+- sold and redirecting booked units disabled in the apartment explorer
 - live floor-plan selector, compass and site-plan modes
 - desktop and mobile layouts
 
@@ -34,3 +37,6 @@ mesh.
 
 The floor-plan, compass and site-plan assets are stored in `plans/` and are
 served locally with the rest of the experience.
+
+Select an apartment twice in the explorer to open its detail page, or open a
+unit directly with `http://127.0.0.1:8080/unit-details.html?unit=43`.
